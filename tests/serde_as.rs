@@ -377,6 +377,7 @@ fn test_none_as_empty_string() {
         value: Option<String>,
     };
 
+    is_equal(Struct { value: None }, r#"{}"#);
     is_equal(Struct { value: None }, r#"{"value":""}"#);
     is_equal(
         Struct {
